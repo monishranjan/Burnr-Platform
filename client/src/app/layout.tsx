@@ -24,12 +24,11 @@ export default function RootLayout({
     <html lang="en" className={spaceGrotesk.variable}>
       <head>
         {/* ✅ Add AdSense Script here */}
-        <Script
-          id="adsense-init"
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3046874546195429"
           crossOrigin="anonymous"
-        />
+        ></script>
       </head>
       <body className="font-burnr">
         {children}
