@@ -3,6 +3,7 @@ import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from "next/script";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -49,12 +50,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={spaceGrotesk.variable}>
       <head>
-        {/* ✅ Add AdSense Script here */}
-        <script
+        {/* ✅ Add AdSense Script here (disabled in dev to prevent freezing) */}
+        <Script
+          id="adsense-init"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3046874546195429"
           crossOrigin="anonymous"
-        ></script>
+        />
       </head>
       <body className="font-burnr">
         {children}
