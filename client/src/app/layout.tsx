@@ -4,6 +4,7 @@ import { Space_Grotesk } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -62,6 +63,7 @@ export default function RootLayout({
         {children}
         <Toaster position="bottom-right" />
         <GoogleAnalytics gaId="G-7XWG7NV4EL" />
+        <Analytics />
       </body>
     </html>
   );
