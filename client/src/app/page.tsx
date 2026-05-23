@@ -5,18 +5,42 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Mail, Shield, Clock } from "lucide-react";
 
+import Script from "next/script";
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col text-text font-burnr bg-animated-gradient">
+      <Script
+        id="json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Burnr - Temporary Email",
+            "url": "https://burnr-inbox.vercel.app",
+            "description": "Protect your privacy with Burnr. Get a free temporary email address instantly. Avoid spam, bypass verification, and stay secure with our disposable throwaway emails.",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "All",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
       {/* Header */}
       <Header />
 
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center px-4 py-16">
         <div className="space-y-2">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-text">Temporary</h1>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary">Email</h1>
-          <h1 className="text-xl sm:text-2xl font-light text-gray-400">Made Simple</h1>
+          <h1 className="flex flex-col">
+            <span className="text-3xl sm:text-4xl md:text-5xl font-light text-text">Free Temporary</span>
+            <span className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary">Email Generator</span>
+            <span className="text-xl sm:text-2xl font-light text-gray-400 mt-2">Made Simple</span>
+          </h1>
         </div>
 
         <p className="text-base sm:text-lg text-text-muted mt-6">
