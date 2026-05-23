@@ -1,6 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FAFAFB;
+  --color-surface: #FFFFFF;
+  --color-primary: #6952e0;
+  --color-primary-dark: #6952e0;
+  --color-accent: #EEF2FF;
+  --color-border: #E5E7EB;
+  --color-text: #111827;
+  --color-text-muted: #6B7280;
+  --font-burnr: var(--font-burnr), sans-serif;
+}
 
 @layer utilities {
   .bg-animated-gradient {
