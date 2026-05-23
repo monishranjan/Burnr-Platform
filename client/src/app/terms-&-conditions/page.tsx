@@ -12,7 +12,7 @@ export default function TermsPage() {
         <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-primary">Terms & Conditions</h1>
           <p className="text-text-muted text-base sm:text-lg max-w-2xl mb-16 mt-4">
-            Please read these terms and conditions carefully before using Burnr.
+            Please read these terms and conditions carefully before using Burnrs.
           </p>
 
           <div className="w-full text-left space-y-10">
@@ -20,7 +20,7 @@ export default function TermsPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Acceptance of Terms</h2>
               <p className="text-text-muted">
-                By accessing or using Burnr, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the service.
+                By accessing or using Burnrs, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the service.
               </p>
             </div>
 
@@ -28,7 +28,7 @@ export default function TermsPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Description of Service</h2>
               <p className="text-text-muted">
-                Burnr provides disposable, temporary email addresses to help users maintain privacy and reduce spam.
+                Burnrs provides disposable, temporary email addresses to help users maintain privacy and reduce spam.
               </p>
             </div>
 
@@ -36,7 +36,7 @@ export default function TermsPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">User Responsibilities</h2>
               <p className="text-text-muted">
-                You agree not to use Burnr for any illegal activities, spam, or abuse. Burnr is not liable for misuse of the platform.
+                You agree not to use Burnrs for any illegal activities, spam, or abuse. Burnrs is not liable for misuse of the platform.
               </p>
             </div>
 
@@ -44,7 +44,7 @@ export default function TermsPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">No Guarantee of Message Delivery</h2>
               <p className="text-text-muted">
-                We do not guarantee that messages sent to Burnr addresses will be received or stored. Messages are auto-deleted after 24 hours.
+                We do not guarantee that messages sent to Burnrs addresses will be received or stored. Messages are auto-deleted after 24 hours.
               </p>
             </div>
 
@@ -52,10 +52,10 @@ export default function TermsPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Advertising and Third-Party Links</h2>
               <p className="text-text-muted">
-                Burnr is a free service supported by advertising. We use third-party vendors, such as Google AdSense, to serve advertisements. These vendors use cookies to serve ads based on your prior visits to our site or other websites on the Internet.
+                Burnrs is a free service supported by advertising. We use third-party vendors, such as Google AdSense, to serve advertisements. These vendors use cookies to serve ads based on your prior visits to our site or other websites on the Internet.
               </p>
               <p className="text-text-muted">
-                Burnr does not endorse the content of ads and is not responsible for third-party services, content, or links. Please review our Privacy Policy for more information on how you can opt out of personalized advertising.
+                Burnrs does not endorse the content of ads and is not responsible for third-party services, content, or links. Please review our Privacy Policy for more information on how you can opt out of personalized advertising.
               </p>
             </div>
 
@@ -71,7 +71,7 @@ export default function TermsPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Limitation of Liability</h2>
               <p className="text-text-muted">
-                Burnr is not liable for any direct or indirect damages arising from the use or inability to use the platform.
+                Burnrs is not liable for any direct or indirect damages arising from the use or inability to use the platform.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export default function TermsPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Modifications to Terms</h2>
               <p className="text-text-muted">
-                We may revise these Terms at any time. Continued use of Burnr constitutes acceptance of any changes.
+                We may revise these Terms at any time. Continued use of Burnrs constitutes acceptance of any changes.
               </p>
             </div>
 

@@ -28,7 +28,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-xl border-b border-white/40 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Brand */}
-        <Link href="/" className="font-bold text-2xl text-primary">Burnr</Link>
+        <Link href="/" className="font-bold text-2xl text-primary">Burnrs</Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden sm:flex items-center gap-6">

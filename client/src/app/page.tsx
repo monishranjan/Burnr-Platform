@@ -17,9 +17,9 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebApplication",
-            "name": "Burnr - Temporary Email",
-            "url": "https://burnr-inbox.vercel.app",
-            "description": "Protect your privacy with Burnr. Get a free temporary email address instantly. Avoid spam, bypass verification, and stay secure with our disposable throwaway emails.",
+            "name": "Burnrs - Temporary Email",
+            "url": "https://www.burnrs.site",
+            "description": "Protect your privacy with Burnrs. Get a free temporary email address instantly. Avoid spam, bypass verification, and stay secure with our disposable throwaway emails.",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "All",
             "offers": {

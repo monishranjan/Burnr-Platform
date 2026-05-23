@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
         {/* Brand */}
         <div>
-          <p className="text-sm">© {new Date().getFullYear()} Burnr. All rights reserved.</p>
+          <p className="text-sm">© {new Date().getFullYear()} Burnrs. All rights reserved.</p>
         </div>
 
         {/* Footer Nav */}
