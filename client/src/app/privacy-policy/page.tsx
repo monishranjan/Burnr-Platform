@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-primary">Privacy Policy</h1>
           <p className="text-text-muted text-base sm:text-lg max-w-2xl mb-16 mt-4">
-            We value your privacy. This policy outlines how we collect, use, and protect your data on Burnr.
+            We value your privacy. This policy outlines how we collect, use, and protect your data on Burnrs.
           </p>
 
           <div className="w-full text-left space-y-10">
@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">What Information We Collect</h2>
               <p className="text-text-muted">
-                Burnr does not collect or require any personal information from users. All temporary email addresses and inboxes are anonymous and deleted after 24 hours.
+                Burnrs does not collect or require any personal information from users. All temporary email addresses and inboxes are anonymous and deleted after 24 hours.
               </p>
             </div>
 
@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Third-party Services and Advertising</h2>
               <p className="text-text-muted">
-                Burnr is a free service supported by advertising. Third-party vendors, including Google, use cookies to serve ads based on a user&apos;s prior visits to our website or other websites.
+                Burnrs is a free service supported by advertising. Third-party vendors, including Google, use cookies to serve ads based on a user&apos;s prior visits to our website or other websites.
               </p>
               <p className="text-text-muted">
                 Google&apos;s use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our sites and/or other sites on the Internet.
@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Children’s Privacy</h2>
               <p className="text-text-muted">
-                Burnr is not intended for children under 13. We do not knowingly collect information from children.
+                Burnrs is not intended for children under 13. We do not knowingly collect information from children.
               </p>
             </div>
 

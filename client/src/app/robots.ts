@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://burnr-inbox.vercel.app';
+  const baseUrl = 'https://www.burnrs.site';
 
   return {
     rules: {

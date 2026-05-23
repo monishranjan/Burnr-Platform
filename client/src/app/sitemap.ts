@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://burnr-inbox.vercel.app';
+  const baseUrl = 'https://www.burnrs.site';
 
   return [
     {
@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/terms-&-conditions`,
+      url: `${baseUrl}/terms-&amp;-conditions`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,

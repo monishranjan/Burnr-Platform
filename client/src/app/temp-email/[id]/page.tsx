@@ -125,7 +125,22 @@ export default function InboxPage() {
 
         {/* Messages */}
         {loading ? (
-          <p className="text-center text-text-muted">Loading emails...</p>
+          <div className="space-y-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="glass-card p-6 rounded-2xl flex flex-col md:flex-row justify-between gap-6 animate-pulse">
+                <div className="w-full md:w-3/4">
+                  <div className="h-4 bg-gray-300/50 rounded-md w-1/4 mb-4"></div>
+                  <div className="h-6 bg-gray-300/50 rounded-md w-2/3 mb-5"></div>
+                  <div className="h-4 bg-gray-300/50 rounded-md w-full mb-2"></div>
+                  <div className="h-4 bg-gray-300/50 rounded-md w-4/5"></div>
+                </div>
+                <div className="w-full md:w-1/4 flex flex-col justify-between items-start md:items-end gap-4">
+                  <div className="h-4 bg-gray-300/50 rounded-md w-24"></div>
+                  <div className="h-10 bg-gray-300/50 rounded-md w-32 mt-4 md:mt-0"></div>
+                </div>
+              </div>
+            ))}
+          </div>
         ) : error ? (
           <p className="text-center text-red-500">{error}</p>
         ) : messages.length === 0 ? (

@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { ClipboardCopy, Inbox } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Footer from '@/components/Footer';
-import VideoAdModal from '@/components/VideoAdModal';
 import { API_BASE_URL } from '@/lib/api';
 import toast from 'react-hot-toast';
 
@@ -17,8 +16,6 @@ type EmailEntry = {
 };
 
 export default function TempEmailPage() {
-  const [afterAdAction, setAfterAdAction] = useState<() => void>(() => () => { });
-  const [showAd, setShowAd] = useState(false);
   // const [pendingInboxId, setPendingInboxId] = useState<string | null>(null);
   const [emails, setEmails] = useState<EmailEntry[]>([]);
   const [loading, setLoading] = useState(true);
@@ -78,7 +75,23 @@ export default function TempEmailPage() {
         </div>
 
         {loading ? (
-          <p className="text-center text-text-muted text-lg">⏳ Loading emails...</p>
+          <div className="space-y-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="glass-card rounded-2xl p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 animate-pulse">
+                <div className="w-full sm:w-1/2 flex flex-col gap-4">
+                  <div className="h-6 bg-gray-300/50 rounded-md w-1/3"></div>
+                  <div className="h-5 bg-gray-300/50 rounded-md w-2/3"></div>
+                  <div className="h-4 bg-gray-300/50 rounded-md w-1/4"></div>
+                  <div className="h-10 bg-gray-300/50 rounded-md w-32 mt-2"></div>
+                </div>
+                <div className="w-full sm:w-1/2 flex flex-col gap-3 items-start sm:items-end">
+                  <div className="h-4 bg-gray-300/50 rounded-md w-40"></div>
+                  <div className="h-4 bg-gray-300/50 rounded-md w-32"></div>
+                  <div className="h-10 bg-gray-300/50 rounded-md w-32 mt-2 sm:mt-4"></div>
+                </div>
+              </div>
+            ))}
+          </div>
         ) : error ? (
           <p className="text-center text-red-500 text-lg">
             ❌ Failed to fetch emails. Please try again later.
@@ -96,17 +109,14 @@ export default function TempEmailPage() {
                 >
                   {/* Left side - Email + Buttons */}
                   <div className="w-full sm:w-1/2 flex flex-col gap-3">
-                    <h2 className="text-lg sm:text-xl font-medium text-text">Burnr Email</h2>
+                    <h2 className="text-lg sm:text-xl font-medium text-text">Burnrs Email</h2>
                     <p className="text-lg text-primary select-all break-all">
                       {isRevealed ? email : maskEmail(email)}
                     </p>
 
                     {!isRevealed && (
                       <button
-                        onClick={() => {
-                          setAfterAdAction(() => () => toggleReveal(_id));
-                          setShowAd(true);
-                        }}
+                        onClick={() => toggleReveal(_id)}
                         className="text-sm text-left text-text-muted hover:underline hover:text-primary "
                       >
                         👁️ Reveal Email
@@ -136,10 +146,7 @@ export default function TempEmailPage() {
                     </p>
                     <div className="mt-2 sm:mt-4">
                       <button
-                        onClick={() => {
-                          setAfterAdAction(() => () => router.push(`/temp-email/${_id}`));
-                          setShowAd(true);
-                        }}
+                        onClick={() => router.push(`/temp-email/${_id}`)}
                         className="inline-flex items-center gap-2 text-sm px-4 py-2 border border-primary rounded-md text-primary hover:bg-accent hover:text-text transition w-fit"
                       >
                         <Inbox size={16} />
@@ -153,20 +160,6 @@ export default function TempEmailPage() {
           </div>
         )}
       </section>
-
-      <VideoAdModal
-        isOpen={showAd}
-        onClose={() => {
-          setShowAd(false);
-          setAfterAdAction(() => () => { });
-        }}
-        onComplete={() => {
-          afterAdAction(); // ✅ This executes the stored action
-          setShowAd(false);
-          setAfterAdAction(() => () => { });
-        }}
-      />
-
 
       <Footer />
     </main>
