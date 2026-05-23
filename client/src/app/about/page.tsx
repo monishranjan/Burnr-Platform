@@ -48,7 +48,7 @@ export default function AboutPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">📣 Ad-Supported & Free</h2>
               <p className="text-text-muted">
-                Burnr is completely free to use. To keep our services sustainable, we partner with third-party vendors, including Google, who use cookies to serve ads based on your prior visits to our website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our sites and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary underline">Google Ads Settings</a>. For more details, please read our <a href="/privacy-policy" className="text-primary underline">Privacy Policy</a>.
+                Burnr is completely free to use. To keep our services sustainable, we partner with third-party vendors, including Google, who use cookies to serve ads based on your prior visits to our website or other websites. Google&apos;s use of advertising cookies enables it and its partners to serve ads to you based on your visit to our sites and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary underline">Google Ads Settings</a>. For more details, please read our <a href="/privacy-policy" className="text-primary underline">Privacy Policy</a>.
               </p>
             </div>
 

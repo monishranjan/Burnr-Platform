@@ -44,14 +44,14 @@ export default function PrivacyPolicyPage() {
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-semibold text-primary">Third-party Services and Advertising</h2>
               <p className="text-text-muted">
-                Burnr is a free service supported by advertising. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website or other websites.
+                Burnr is a free service supported by advertising. Third-party vendors, including Google, use cookies to serve ads based on a user&apos;s prior visits to our website or other websites.
               </p>
               <p className="text-text-muted">
-                Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our sites and/or other sites on the Internet.
+                Google&apos;s use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our sites and/or other sites on the Internet.
               </p>
               <p className="text-text-muted">
                 You may opt out of personalized advertising by visiting the{" "}
-                <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary underline">Google Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting{" "}
+                <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary underline">Google Ads Settings</a>. Alternatively, you can opt out of a third-party vendor&apos;s use of cookies for personalized advertising by visiting{" "}
                 <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-primary underline">www.aboutads.info</a>.
               </p>
             </div>
